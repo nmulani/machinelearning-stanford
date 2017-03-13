@@ -18,11 +18,18 @@ grad = zeros(size(theta));
 %               derivatives of the cost w.r.t. each parameter in theta
 
 
+% The normal cost function for logisitic regression
 normJ = ((1/m) * ((-y'*log(sigmoid(X*theta)))-(((1-y)')*log(1-sigmoid(X*theta)))));
+
+% The normal gradient for logisitic regression
 normGrad = ((1/m) * (X' * (sigmoid(X*theta)-y)));
+
+% Create regularization terms for cost function and gradient
 theta(1) = 0;
 regularizationTermJ = ((lambda/(2*m))*(theta' * theta));
 regularizationTermGrad = ((lambda/m)*theta);
+
+% Add normal cost function and normal gradient to regularized terms to get final values
 J = normJ+regularizationTermJ;
 grad = normGrad + regularizationTermGrad;
 
