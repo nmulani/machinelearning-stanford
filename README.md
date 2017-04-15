@@ -4,7 +4,7 @@ Each HW folder includes my Octave/MATLAB solutions to the weekly homework proble
 
 - __Week 1__ Linear Regression
 - __Week 2__ Logistic Regression
-- __Week 3__ Multi-Class Regression and Neural Netwokrs
+- __Week 3__ Multi-Class Regression and Neural Networks
 - __Week 4__ Learning and Neural Networks
 - __Week 5__ Regularization and Bias/Variance
 - __Week 6__ Support Vector Machines
